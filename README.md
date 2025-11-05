@@ -15,7 +15,7 @@ VALUES ('M0416', 'Moses Car', 100.12, 10),
 
 ```
 Add 3 new product to the stock
-![Query1](Query1.png)
+![Query1](./images/Query1.png)
 ### Query 2
 Customer Order. Write the series of statements required for an existing customer to order two different products in a single transaction.
 ```sql
@@ -67,7 +67,7 @@ ORDER BY TotalSpending DESC
 LIMIT 10;
 ```
 
-![Query4](./Query4.png)
+![Query4](./images/Query4.png)
 ### Query 5
 
 ```sql
@@ -78,7 +78,7 @@ WHERE i.Status = 'SHIPPED'
 GROUP BY MONTH(InvoiceDate)  
 ORDER BY MONTH(InvoiceDate);
 ```
-![Query5](./Query5.png)
+![Query5](./images/Query5.png)
 ## Advance
 ### Trigger
 Create a trigger that automatically updates the inventory level of a product whenever a transaction (sale or return) involving that product is recorded.
