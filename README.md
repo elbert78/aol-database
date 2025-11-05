@@ -1,7 +1,7 @@
 Project: AOL Database
 
 ## ERD
-![[ERD.png]]
+![ERD](./ERD.png)
 
 ## DML
 ### Query 1
@@ -66,7 +66,7 @@ ORDER BY TotalSpending DESC
 LIMIT 10;
 ```
 
-![[Query4.png]]
+![Query4](./Query4.png)
 ### Query 5
 
 ```sql
@@ -77,7 +77,7 @@ WHERE i.Status = 'SHIPPED'
 GROUP BY MONTH(InvoiceDate)  
 ORDER BY MONTH(InvoiceDate);
 ```
-![[Query5.png]]
+![Query5](./Query5.png)
 ## Advance
 ### Trigger
 Create a trigger that automatically updates the inventory level of a product whenever a transaction (sale or return) involving that product is recorded.
