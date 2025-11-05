@@ -2,7 +2,7 @@
 Project: AOL Database
 
 ## ERD
-![ERD](./ERD.png)
+![ERD](./images/ERD.png)
 
 ## DML
 ### Query 1
