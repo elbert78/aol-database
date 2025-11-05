@@ -492,12 +492,9 @@ ORDER BY TotalSpending DESC
 LIMIT 10;
 
 -- Query 5: Analytical Report. Write a query to identify the month with the highest total sales revenue in the year 2011.
-SELECT month(InvoiceDate) as Month, sum(GrandTotal) as SalesRevenue
+SELECT MONTH(InvoiceDate) AS Month, SUM(GrandTotal) AS SalesRevenue
 FROM Invoice i
-where i.Status = 'SHIPPED' and year(InvoiceDate) = 2011
-group by MONTH(InvoiceDate)
-order by month(InvoiceDate);
-
-
-
-
+WHERE i.Status = 'SHIPPED'
+  AND YEAR(InvoiceDate) = 2011
+GROUP BY MONTH(InvoiceDate)
+ORDER BY MONTH(InvoiceDate);
