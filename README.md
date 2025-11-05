@@ -15,7 +15,7 @@ VALUES ('M0416', 'Moses Car', 100.12, 10),
 
 ```
 Add 3 new product to the stock
-![[Query1.png]]
+![Query1](Query1.png)
 ### Query 2
 Customer Order. Write the series of statements required for an existing customer to order two different products in a single transaction.
 ```sql
