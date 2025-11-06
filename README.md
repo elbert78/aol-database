@@ -69,7 +69,7 @@ LIMIT 10;
 
 ![Query4](./images/Query4.png)
 ### Query 5
-
+Analytical Report. Write a query to identify the month with the highest total sales revenue in the year 2011.
 ```sql
 SELECT MONTH(InvoiceDate) AS Month, SUM(GrandTotal) AS SalesRevenue  
 FROM Invoice i  
@@ -161,14 +161,17 @@ BEGIN
 END;
 ```
 3 Trigger is added for stock tracking.
+
 In case of new shipped item:
 - Insert: Stock number is subtracted
 - Delete: Stock number is added
 - Update: Old Stock number is added while new stock number is subtracted
+
 In case of new return item:
 - Insert: Stock number is added 
 - Delete: Stock number is subtracted
 - Update: Old Stock number is subtracted while new stock number is added
+
 ### Stored Procedure
 Create a stored procedure named GetCustomerInvoiceHistory that accepts a CustomerID as input and returns a complete list of all invoices (including the date and total value) belonging to that customer.
 
